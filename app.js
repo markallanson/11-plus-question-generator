@@ -105,3 +105,9 @@ function displayAnswers(questions) {
 
   document.getElementById("answersWrapper").innerHTML = tableHTML;
 }
+
+// Button to print the page
+function printPage() {
+  window.print();
+}
+document.getElementById("printButton").addEventListener("click", printPage);

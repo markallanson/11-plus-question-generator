@@ -1,6 +1,37 @@
 @media print {
+    @page {
+        size: auto;
+        margin: 1em;
+    }
+
+    /* Hide all printed page decoration (page numbers, filename, etc) */
+    @page {
+        @top-left {
+            content: none;
+        }
+        @top-center {
+            content: none;
+        }
+        @top-right {
+            content: none;
+        }
+        @bottom-left {
+            content: none;
+        }
+        @bottom-center {
+            content: none;
+        }
+        @bottom-right {
+            content: none;
+        }
+    }
+
     .nonPrintable {
         display: none;
+    }
+
+    h1 {
+        font-size: 20px;
     }
 
     table#questions tr {
@@ -8,5 +39,16 @@
         height: 6em;
         max-height: 6em;
         vertical-align: top;
+    }
+
+    div#sidebar {
+        display: none;
+    }
+
+    div#footer {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 8px;
     }
 }
