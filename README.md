@@ -31,11 +31,9 @@ If you don't have, or cannot create an OpenAI API Key - and that is probably mos
 
 At the end of your prompt, add the following additional prompt text which will make ChatGPT generate the output as a nicely formatted table that you can copy/paste and print from your favourite word processor.
 
-```
-Please output the questions as a Markdown table, with the headers Question #, Question, Answer, Score. The Answer column is reserved for the student to write the answer, not the correct answer itself. The Score column is for the marker to write the score for the question. Each question scores 1. Include a total row at the bottom of the table to record the total score, and include "/<available score points>" to show out of how many total points were available for the set of questions. Ensure the total row is joined to the rest of the table.
-
-Also output, after the main table, an answers table that shows just the Question # and the answer for that question number.
-```
+> Please output the questions as a Markdown table, with the headers Question #, Question, Answer, Score. The Answer column is reserved for the student to write the answer, not the correct answer itself. The Score column is for the marker to write the score for the question. Each question scores 1. Include a total row at the bottom of the table to record the total score, and include "/<available score points>" to show out of how many total points were available for the set of questions. Ensure the total row is joined to the rest of the table.
+>
+> Also output, after the main table, an answers table that shows just the Question # and the answer for that question number.
 
 [11+ Practice Questions Generator]: https://markallanson.github.io/11-plus-question-generator/
 [OpenAI API Key]: https://platform.openai.com/docs/quickstart/step-2-setup-your-api-key
