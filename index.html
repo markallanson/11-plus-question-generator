@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OpenAI 11+ Practice Questions Generator</title>
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="app.print.css">
+    </head>
+    <body>
+        <h1 class="nonPrintable">OpenAI 11+ Practice Questions Generator</h1>
+        Sample Prompts: <select class="nonPrintable" id="promptSelector"></select>
+        <input class="nonPrintable" id="openAiApiKey" placeholder="Enter your OpenAI API Key here..."></input>
+        <textarea
+            id="promptInput"
+            placeholder="Enter your prompt here..."
+            class="nonPrintable"
+        ></textarea>
+        <button class="nonPrintable" onclick="generateQuestions()">
+            Generate Questions
+        </button>
+        <div id="questionsWrapper"></div>
+        <div id="answersWrapper"></div>
+
+        <script src="prompts.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

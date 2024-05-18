@@ -1,0 +1,12 @@
+@media print {
+    .nonPrintable {
+        display: none;
+    }
+
+    table#questions tr {
+        font-size: 8pt;
+        height: 6em;
+        max-height: 6em;
+        vertical-align: top;
+    }
+}
