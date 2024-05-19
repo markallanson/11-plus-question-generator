@@ -89,3 +89,7 @@ div#footer {
     vertical-align: middle;
     display: none;
 }
+
+span#source {
+    font-size: 10px;
+}
