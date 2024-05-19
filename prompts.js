@@ -56,6 +56,8 @@ practically useful in everyday life.
 Do not limit yourself to just the examples above (volume and area). Incorporate other practical unit types
 for conversion as well, but please do not use computer base conversions (for example, bytes to megabytes)
 as these are not covered by 11+ exams.
+
+Do not include in the question whether it is narrative, basic, multi-step or GCSE level.
     `,
   },
   {
@@ -90,6 +92,8 @@ Do not limit yourself to just the examples above. Incorporate other practical ca
 use computer based questions as these are not covered by 11+ exams.
 
 Output fractions as a basic ascii representation.
+
+Do not include in the question whether it is narrative, basic, multi-step or GCSE level.
     `,
   },
 ];
