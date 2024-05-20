@@ -47,7 +47,8 @@ Split the questions evenly between narrative and basic.
 Do not use any of the examples above as questions.
 
 For any questions that involve conversion from Metric to Imperial units, include an example conversion, for
-example 1 meter = x yards.
+example 1 meter = x yards. For any sample conversions you provide please round decimal numbers to a single 
+decimal place in order to simplify the conversion calculation. For example, use 3.2 feet per meter not 3.28084.
 
 For the narrative questions, feel free to use the names of people in order to "tell a story" as part of the
 question. This will help engage the young mind! Try and make the narrative questions based in something that is
