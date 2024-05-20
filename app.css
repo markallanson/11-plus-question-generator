@@ -93,3 +93,25 @@ div#footer {
 span#source {
     font-size: 10px;
 }
+
+.hiddenThrobber {
+    display: none;
+}
+
+#throbbingCircle {
+    width: 2em;
+    height: 2em;
+    background-color: grey;
+    border-radius: 50%;
+    animation: throb 1.5s infinite ease-in-out;
+}
+
+@keyframes throb {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}

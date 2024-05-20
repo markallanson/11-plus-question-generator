@@ -9,29 +9,30 @@
     </head>
     <body>
         <div id="container">
-            <header>
-                <h1 class="nonPrintable">
-                    OpenAI/GPT 11+ Practice Questions Generator
-                </h1>
-            </header>
+            <h1 class="nonPrintable">
+                OpenAI/GPT 11+ Practice Questions Generator
+            </h1>
             <div id="content">
                 <div id="sidebar">
                     <div id="sidebar-content">
                         <span id="source"><a href="https://github.com/markallanson/11-plus-question-generator">source & details</a></span>
-                        <input class="nonPrintable" id="openAiApiKey" placeholder="Enter your OpenAI API Key here..."></input>
-                        <button class="nonPrintable" onclick="generateQuestions()">
+                        <input id="openAiApiKey" placeholder="Enter your OpenAI API Key here..."></input>
+                        <span>Number of Questions:</span>
+                        <input id="numQuestions" value="7"></input>
+                        <button onclick="generateQuestions()">
                             Generate Questions
                         </button>
-                        <button id="printButton" class="nonPrintable">Print Questions and Answers</button>
-                        Sample Prompts: <select class="nonPrintable" id="promptSelector"></select>
+                        <button id="printButton">Print Questions and Answers</button>
+                        <span>Sample Prompts:</span>
+                        <select id="promptSelector"></select>
                         <textarea
                             id="promptInput"
                             placeholder="Enter your prompt here..."
-                            class="nonPrintable"
                         ></textarea>
                     </div>
                 </div>
                 <div id="main">
+                    <div id="throbbingCircle" class="nonPrintable hiddenThrobber"></div>
                     <div id="questionsWrapper"></div>
                     <div id="answersWrapper"></div>
                     <div id="footer">

@@ -1,11 +1,9 @@
 @media print {
-    @page {
-        size: auto;
-        margin: 1em;
-    }
-
     /* Hide all printed page decoration (page numbers, filename, etc) */
     @page {
+        size: A4;
+        margin: 1cm;
+
         @top-left {
             content: none;
         }
@@ -26,6 +24,11 @@
         }
     }
 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
     .nonPrintable {
         display: none;
     }
@@ -36,8 +39,8 @@
 
     table#questions tr {
         font-size: 8pt;
-        height: 6em;
-        max-height: 6em;
+        height: 9em;
+        max-height: 9em;
         vertical-align: top;
     }
 

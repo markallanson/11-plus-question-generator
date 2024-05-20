@@ -1,18 +1,17 @@
 // Function to generate questions using OpenAI API
 async function generateQuestions() {
-  const assistantPrompt = `
-You are an assistant that only speaks JSON data.
-
-All your responses are structured as a JSON object that contains a single key "questions" which contains
-an array of JSON objects.
-
-Each object in the questions array contains only the keys "question" and "answer".
-  `;
+  const numQuestions = document.getElementById("numQuestions").value.trim();
 
   const prompt = document.getElementById("promptInput").value.trim();
   const apiKey = document.getElementById("openAiApiKey").value.trim();
+  const numQuestionsPrompt = `Could you please prepare ${numQuestions} practice questions. This is very important! Only generate ${numQuestions} questions.`;
+
+  const finalPrompt = assistantPrompt + prompt + numQuestionsPrompt;
 
   try {
+    var element = document.getElementById("throbbingCircle");
+    element.classList.toggle("hiddenThrobber");
+
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -24,7 +23,7 @@ Each object in the questions array contains only the keys "question" and "answer
         messages: [
           {
             role: "system",
-            content: assistantPrompt + prompt,
+            content: finalPrompt,
           },
         ],
         temperature: 0.7,
@@ -33,6 +32,7 @@ Each object in the questions array contains only the keys "question" and "answer
     });
 
     const data = await response.json();
+    element.classList.toggle("hiddenThrobber");
 
     const questionsJson = JSON.parse(data.choices[0].message.content);
 
