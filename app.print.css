@@ -37,7 +37,7 @@
         font-size: 20px;
     }
 
-    table#questions tr {
+    table#questions tr td {
         font-size: 8pt;
         height: 9em;
         max-height: 9em;

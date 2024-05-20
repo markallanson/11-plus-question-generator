@@ -123,11 +123,15 @@ angle triangle drawn in such a manner.
 90 ******* 60
 </pre>
 
-The question here would be "calculate the missingle angle y".
+The question here would be "calculate the missing angle y".
 
 Note the right angle triangle above is only an example. Do not generate this exact example as a
-question. You don't just have to generate right angle triangles as questions - be creative - generate
-other geometric shapes too.
+question. You don't just have to generate right angle triangles as diagram based questions - be
+creative - generate other types of diagrams using different triangles and other geometric shapes too
+that can be used for angle based questions such as Equilateral, Isosceles or Scalene triangles,
+parallelograms, diamonds, etc. When you generate questions about different shapes, also adjust the
+drawing (using * for the edges) to match the shape the question is about. For example, don't make
+a Scalene triangle look like a right angle triangle as that might confuse the student.
 
 Generate a variety of different 11+ based angle questions such as those requiring solving for missing
 angles in abstract triangular diagrams, adding and subtracting angles, etc.

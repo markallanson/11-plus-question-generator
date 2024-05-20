@@ -56,7 +56,7 @@ function displayQuestions(questions) {
     <h1>Questions</h1>
     <table id="questions">
         <tr>
-            <th>Question #</th>
+            <th>#</th>
             <th>Question</th>
             <th>Answer</th>
             <th>Score</th>
